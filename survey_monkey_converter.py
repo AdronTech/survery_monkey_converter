@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """ Convert survey monkey csv to csv with collapsed answers
 
 Usage:
@@ -17,7 +18,6 @@ Options:
 from pathlib import Path
 import csv
 from type_docopt import docopt
-from pprint import pprint
 
 def fix_table(input, output):
     """ Fix headers of multiple choice matrix questions. Convert to multiple questions with multiply choice answers.
